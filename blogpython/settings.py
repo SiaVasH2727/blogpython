@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'appblog',
     'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -127,8 +128,9 @@ USE_TZ = True
 # Static Files
 
 STATIC_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
 
 # CKEditor
+
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "uploads/"
