@@ -40,3 +40,12 @@ class IndexPage(TemplateView):
 
 class ContactPage(TemplateView):
     template_name = "page-contact.html"
+
+
+class AboutPage(TemplateView):
+    template_name = "page-about.html"
+
+
+class CategoryPage(TemplateView):
+    template_name = "category.html"
+
