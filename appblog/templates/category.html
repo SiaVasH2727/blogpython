@@ -88,8 +88,10 @@
 
 
             <div class="row entries-wrap wide">
-                <div class="entries">
 
+                <div class="entries">
+{#                    برای اعمال عناوین دسته بندی ها به این صفحه                    #}
+{#                    {% for category in article_category %}#}
                     <article class="col-block">
 
                         <div class="item-entry" data-aos="zoom-in">
@@ -114,6 +116,10 @@
                         </div> <!-- item-entry -->
 
                     </article> <!-- end article -->
+
+
+{#                    {% endfor %}#}
+
 
 {#                    <article class="col-block">#}
 {##}
@@ -393,6 +399,7 @@
 {#                    </article> <!-- end article -->#}
 
                 </div> <!-- end entries -->
+
             </div> <!-- end entries-wrap -->
 
             <div class="row pagination-wrap">

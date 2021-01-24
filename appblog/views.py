@@ -49,3 +49,21 @@ class AboutPage(TemplateView):
 class CategoryPage(TemplateView):
     template_name = "category.html"
 
+    # فقط عناوین دسته بندی ها را برای نمایش در صفحه دسته بندی بر میگرداند
+    # def get(self, request, **kwargs):
+    #     article_category = []
+    #     all_category = Category.objects.all()
+    #
+    #     for category in all_category:
+    #         article_category.append({
+    #             'title': category.title,
+    #             'cover': category.cover.url if category.cover else None,
+    #             # 'category': article.category.title,
+    #             # 'created_at': article.created_at.date(),
+    #         })
+    #
+    #     context = {
+    #         'article_category': article_category,
+    #     }
+    #
+    #     return render(request, 'category.html', context)
