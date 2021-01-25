@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^contact/$', views.ContactPage.as_view(), name='contact'),
     url(r'^about/$', views.AboutPage.as_view(), name='about'),
     url(r'^category/$', views.CategoryPage.as_view(), name='category'),
+    url(r'^article/all/$', views.AllArticleAPIView.as_view(), name='allarticles'),
 ]

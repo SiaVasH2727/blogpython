@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# noinspection PyUnresolvedReferences
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,7 +41,7 @@ INSTALLED_APPS = [
     'appblog',
     'ckeditor',
     'ckeditor_uploader',
-    # 'rest_framework',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

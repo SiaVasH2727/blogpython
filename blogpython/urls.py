@@ -18,14 +18,14 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from django.conf.urls import include,url
+from django.conf.urls import include, url
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^', include('appblog.urls')),
-    # url(r'^api-auth/', include('rest-framework.urls'))
+    url(r'^api-auth/', include('rest_framework.urls'))
 ]
 
 if settings.DEBUG:
